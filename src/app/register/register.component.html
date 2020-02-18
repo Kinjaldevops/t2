@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>register</title>
+        <script src="https://www.google.com/reCAPTCHA/api.js" async defer></script>
+    </head>
+    <body>
+<form>
+    Full Name:<input type="text" required><br/><br/>
+    E-Mail:<input type="email" required><br/><br/>
+    Mobile:<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br/><br/>
+    city:<input type="text"  required><br/><br/>
+date of birth:
+    <select name="DOBDay">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+
+Month
+<select name="DOBMonth">
+<option value="January">January</option>
+<option value="February">February</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+</select>
+
+Year
+<select name="DOBYear">
+<option value="1947">1947</option>
+<option value="1948">1948</option>
+<option value="1949">1949</option>
+<option value="1950">1950</option>
+<option value="1951">1951</option>
+</select><br/><br/>
+
+
+state:<input type="text"  required><br/><br/>
+qualification:<input type="text" required><br/><br/>
+year of completion:<input type="text" required><br/><br/>
+
+
+</form>
+<form action="?" method="POST">
+    <div class="g-reCAPTCHA" data-sitekey="your_site_key"></div>
+    <br/>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+<router-outlet></router-outlet>
+
+</html>
